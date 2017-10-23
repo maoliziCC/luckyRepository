@@ -1,0 +1,91 @@
+Adjustable Link Strength
+https://bl.ocks.org/mbostock/aba1a8d1a484f5c5f294eebd353842da
+Multitouch Drag
+https://bl.ocks.org/mbostock/9631744
+Curved Links
+https://bl.ocks.org/mbostock/4600693
+Force-Directed Graph
+https://bl.ocks.org/mbostock/4062045
+Drag + Zoom
+https://bl.ocks.org/mbostock/6123708
+--Draggable Network II
+https://bl.ocks.org/mbostock/4566102
+---Brushable Network, II
+https://bl.ocks.org/mbostock/4565798
+
+
+【D3相关资料整理】持续更新中......
+http://blog.csdn.net/tianxuzhang/article/details/18456701
+!! 有用
+http://christopheviau.com/d3list/gallery.html#visualizationType=network
+
+http://blockbuilder.org/micahstubbs/e5d0c64e487a8920e6b775f1244f8486
+
+
+Search the Bl.ocks
+http://blockbuilder.org/search#text%3Darrow%3Bd3version%3Dv4
+
+
+
+
+【D3.js数据可视化系列教程】（三十二）-- 力导向图之弧形箭头连线
+http://blog.csdn.net/tianxuzhang/article/details/14230537
+
+
+
+http://localhost:63343/d3-api-demo
+
+http://localhost:63343/d3-api-demo/behavior/drag/drag.html
+
+
+【 D3.js 进阶系列 — 4.0 】 绘制箭头
+http://blog.csdn.net/lzhlzz/article/details/41808231
+
+http://blog.csdn.net/tengxing007/article/details/59712572
+力导向图
+https://github.com/tianxuzhang/d3.v4-API-Translation#hierarchies
+ /* 相关API
+d3.forceSimulation - 创建一个力模拟。
+simulation.restart - 重启力模拟。
+simulation.stop - 停止力模拟。
+simulation.tick - 将力模拟向前推进一步。
+simulation.nodes - 设置力模拟的节点。
+simulation.alpha - 设置当前的α值。
+simulation.alphaMin -设置α最小阈值。
+simulation.alphaDecay - 设置α指数衰减率。
+simulation.alphaTarget - 设置目标α。
+simulation.drag - 设置曳引系数。
+simulation.force - 添加或移除力。
+simulation.fix - 固定节点位置。
+simulation.unfix - 释放固定的节点。
+simulation.find - 查找给定位置最近的节点。
+simulation.on - 添加或移除事件监听器。
+force - 应用力模拟。
+force.initialize - 使用给定的节点初始化力布局。
+d3.forceCenter - 创建一个力中心。
+center.x - 设置中心的x-坐标。
+center.y - 设置中心的y-坐标。
+d3.forceCollide - 创建一个圆碰撞力。
+collide.radius - 设置圆的半径。
+collide.strength - 设置碰撞检测强度。
+collide.iterations - 设置迭代次数。
+d3.forceLink - 创建连接力。
+link.links - 设置连接数组。
+link.id - 连接数组。
+link.distance - 设置连接距离。
+link.strength - 设置连接强度。
+link.iterations - 设置迭代次数。
+d3.forceManyBody - 创建多体力。
+manyBody.strength - 设置力强度。
+manyBody.theta - 设置Barnes-Hut近似精度。
+manyBody.distanceMin - 当节点关闭限制力。
+manyBody.distanceMax - 当节点太远限制力。
+d3.forceX - 创建x-定位力。
+x.strength - 设置力强度。
+x.x - 设置目标x-坐标。
+d3.forceY - 创建y-定位力。
+y.strength - 设置力强度。
+y.y - 设置目标y-坐标。
+*/
+
+

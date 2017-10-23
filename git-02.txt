@@ -1,0 +1,61 @@
+git 
+
+Githug
+
+//----------
+git clone
+git init 
+
+add
+mv
+reset
+rm
+
+bisect
+grep
+log
+show
+status
+
+branch
+checkout
+commit
+diff
+merge
+rebase
+tag
+
+stash
+
+fetch
+pull
+push
+
+git help -a   
+git help -g
+git help <command>
+//----------
+
+git status   #使用 git status 查看当前仓库的状态，可以看到红色部分就是 untracked 状态的文件
+git add <file>    
+
+		git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
+	  [--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]]
+	  [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing]
+	  [--chmod=(+|-)x] [--] [<pathspec>…​]
+
+git commit  -m "..."
+
+git push
+
+
+(use "git reset HEAD <file>..." to unstage)(暂存区))
+
+rm :有一个文件从硬盘中删除了，但是并未从 git 仓库中删除，找到它并从 git 仓库中删除。删除也是修改的一种，提交这个修改就好了
+
+stash :临时提交某个文件。这个操作在需要临时保存修改，而又不想提交的时候特别好用！而且 git 中维护了一个栈来保存，所以支持提交多次。如果需要恢复某次提交，使用 git stash apply 即可。
+
+checkout 和 reset 的区别参照第二十一关
+
+git remote -v   #查看远端仓库的 URL
+

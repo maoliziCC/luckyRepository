@@ -1,0 +1,64 @@
+# 提交代码
+
+git commit -a -m "AIR 200 测试代码"
+
+git push origin test
+
+git status 
+
+
+我们在将Develop分支发布到Master分支时，可能采用如下的命令：
+　1、　# 切换到Master分支
+　　git checkout master
+  2、　　# 对Develop分支进行合并
+　　git merge --no-ff develop
+---------将多次提及合并成一次-----------
+git merge --squash  develop      
+git commit -a -m ''  
+----------------------------------------
+
+回复代码：
+git reset --hard 版本号
+
+切换分支：
+git checkout test
+
+拉取代码：
+git pull
+
+合并代码：
+git  cherry-pick  版本号
+例： $ git  cherry-pick e9f41116b91
+
+删除分支
+git branch -r -d origin/branch-name
+git push origin :branch-name
+
+branch-name替换成分支名称
+
+
+
+
+
+
+8. 将多次提交合并为一次
+      以branch 合到 test 为例
+            1. git checkout test     
+                git pull
+                保证test代码最新 
+            2.  新建一个分支，用于过度代码
+                (1)   git checkout -b test_pre  (首次) 
+      (2) 如果分支已经存在 (非首次)，则  
+                        git checkout  test_pre
+                        git rebase test  
+            3. git  cherry-pick dddddd
+                合并多次
+            4. git rebase -i test
+      变基 
+        pick 改为s
+      先esc 然后 :wq!
+            5. git checkout test  
+      切换分支
+            6. git merge test_pre      
+               合并代码   
+            7. git push origin test_pre 

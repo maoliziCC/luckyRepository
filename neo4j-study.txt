@@ -1,0 +1,69 @@
+cypher:  https://neo4j.com/docs/cypher-refcard/3.2/
+
+
+http://localhost:7474/browser/
+
+pwd: tuniu520
+
+
+You are connected as user neo4j
+to the server bolt://localhost:7687
+
+
+	:play concepts   
+
+	:play intro
+
+	:play cypher
+		 eg:
+		 1.
+			CREATE (ee:Person { name: "Emil", from: "Sweden", klout: 99 })
+		 2.
+			MATCH (ee:Person) WHERE ee.name = "Emil" RETURN ee;
+		 3.	
+			MATCH (ee:Person) WHERE ee.name = "Emil"
+				CREATE (js:Person { name: "Johan", from: "Sweden", learn: "surfing" }),
+				(ir:Person { name: "Ian", from: "England", title: "author" }),
+				(rvb:Person { name: "Rik", from: "Belgium", pet: "Orval" }),
+				(ally:Person { name: "Allison", from: "California", hobby: "surfing" }),
+				(ee)-[:KNOWS {since: 2001}]->(js),(ee)-[:KNOWS {rating: 5}]->(ir),
+				(js)-[:KNOWS]->(ir),(js)-[:KNOWS]->(rvb),
+				(ir)-[:KNOWS]->(js),(ir)-[:KNOWS]->(ally),
+				(rvb)-[:KNOWS]->(ally)
+		 4.
+			MATCH (ee:Person)-[:KNOWS]-(friends)
+				WHERE ee.name = "Emil" RETURN ee, friends
+		 5.
+			MATCH (js:Person)-[:KNOWS]-()-[:KNOWS]-(surfer)
+				WHERE js.name = "Johan" AND surfer.hobby = "surfing"
+				RETURN DISTINCT surfer
+				
+				说明：
+					()empty parenthesis to ignore these nodes
+					DISTINCTbecause more than one path will match the pattern
+		 6.
+			PROFILE MATCH (js:Person)-[:KNOWS]-()-[:KNOWS]-(surfer)
+				WHERE js.name = "Johan" AND surfer.hobby = "surfing"
+				RETURN DISTINCT surfer
+			说明：
+				Understand how your query works by prepending EXPLAIN  or  PROFILE:
+			
+			Start your application using Cypher to create and query graph data. Use the REST API to monitor the database. In special cases, consider a plugin. 
+				
+				
+		7.
+	
+:play movie-graph
+
+:play northwind-graph
+
+:help 
+
+
+
+    Single line editing for brief queries or commands
+    Switch to multi-line editing with <shift-enter>
+    Run a query with <ctrl-enter>
+    History is kept for easily retrieving previous commands
+
+	Clear the stream with the  :clear command
