@@ -88,4 +88,19 @@ y.strength - 设置力强度。
 y.y - 设置目标y-坐标。
 */
 
+项目目录：
+C:\Users\lizhang\WebstormProjects\01
 
+
+http://localhost:63343/01/01/index08.html
+
+D3.js 力导向图（气泡+线条+箭头+文字）
+http://www.cnblogs.com/xcxcxcxc/p/5900444.html
+
+d3.js——箭头的绘制
+http://blog.csdn.net/selina_chan/article/details/51352701
+http://blog.csdn.net/tianxuzhang/article/details/14230537
+
+D3.js d3的path讲解
+http://www.mamicode.com/info-detail-1163777.html
+https://www.dashingd3js.com/svg-paths-and-d3js

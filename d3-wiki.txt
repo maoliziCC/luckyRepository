@@ -5,6 +5,11 @@ https://github.com/d3/d3/wiki/Gallery
 【 持续更新 】D3 的学习资料
 http://www.ourd3js.com/wordpress/865/#more-865
 
+
+【D3相关资料整理】持续更新中......
+http://blog.csdn.net/tianxuzhang/article/details/18456701
+
+
 	API 中文手册
 	https://github.com/d3/d3/wiki/API--%E4%B8%AD%E6%96%87%E6%89%8B%E5%86%8C
 
