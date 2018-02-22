@@ -1,0 +1,41 @@
+工具窗体 	快捷键
+Project 	Alt+1
+Version Control 	Alt+9
+Debug 	Alt+5
+Terminal 	Alt+F12
+Editor 	AltEscape4
+
+
+一种替代自由娱乐模式的方式是按ctrl+shift+f12同样可以隐藏所有的工具窗体。你可以再次按下这个快捷键来复原所有布局。 
+
+导航栏是一种紧凑的替代项目工具窗体的方式。可以按Alt+home键进入导航栏。 
+
+
+
+以上： http://blog.csdn.net/u014042066/article/details/72866282
+//------------------
+
+
+这榜单阵容太豪华了，后几名都是如此有用，毫不示弱。
+
+?  Top #10切来切去：Ctrl+Tab
+
+?  Top #9选你所想：Ctrl+W
+
+?  Top #8代码生成：Template/Postfix +Tab
+
+?  Top #7发号施令：Ctrl+Shift+A
+
+?  Top #6无处藏身：Shift+Shift
+
+?  Top #5自动完成：Ctrl+Shift+Enter
+
+?  Top #4创造万物：Alt+Insert
+
+太难割舍，前三名并列吧！
+
+?  Top #1智能补全：Ctrl+Shift+Space
+
+?  Top #1自我修复：Alt+Enter
+
+?  Top #1重构一切：Ctrl+Shift+Alt+T
